@@ -7,7 +7,9 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  
+  <view class="userinfo">
+    <i-button type="primary" bind:click="handleClick">点击扫码</i-button>
+  </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>

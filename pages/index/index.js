@@ -50,5 +50,15 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  handleClick: function(e){
+    wx.scanCode({
+      onlyFromCamera: true,
+      success: res => {
+        this.setData({
+          motto: res.result
+        })
+      }
+    })
   }
 })
